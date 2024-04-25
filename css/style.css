@@ -111,7 +111,7 @@ h1.logo {
     overflow: auto;
 }
 
-.najbolji-naslov, .onama-naslov  {
+.najbolji-naslov, .onama-naslov, .partneri-naslov  {
     font-size: 2em;
     margin-bottom: 2rem;
     line-height: 1.1;
@@ -182,5 +182,124 @@ h1.logo {
 .list li {
     padding: 0.5rem 0;
     border-bottom: #999 dotted 1px;
+}
+
+.partneri {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+.partneri img {
+    margin: auto;   
+    width: 60%;
+}
+
+.poz-zelena {
+    background: #2c6934;
+    color: #fff;
+}
+
+#kontakt {
+    display: flex;
+}
+
+.map, .kontakt-form {
+    flex: 1;
+}
+
+.form-group {
+    margin: 0.75rem;
+}
+
+.kontakt-form {
+    padding: 2rem;
+}
+
+.contakt-form label {
+    display: block;
+}
+
+.kontakt-form input, .kontakt-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+@media screen and (min-width:1100px) {
+.ponuda {
+    display: flex;
+    text-align: left;
+}
+
+.ponuda i {
+    margin-right: 1.3rem;
+    align-self: center;
+}
+
+.map {
+    flex: 2;
+}
+}
+
+@media screen and (max-width:768px) {
+    .ponuda {
+        display: flex;
+        text-align: left;
+    }
+
+    .ponuda i {
+        margin-left: 1.3rem;
+        align-self: center;
+    }
+
+    .container-ponuda {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:680px) {
+    #navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar .logo {
+        margin-bottom: 1rem;
+    }
+
+    #navbar ul {
+        padding: 0.5rem;
+    }
+
+    #hero {
+       margin-top: -100px;
+    }
+
+    #onama {
+        display: block;
+    }
+
+    .onama-img {
+        display: none;
+    }
+
+    #partneri img {
+        width: 80%;
+    }
+
+    .div.partneri div:last-child {
+        display: none;
+    }
+
+    #kontakt {
+        flex-direction: column;
+    }
 }
 
